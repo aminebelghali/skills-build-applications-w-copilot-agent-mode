@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 const app = express();
 const port = Number(process.env.PORT ?? 8000);
-const mongoUri = process.env.MONGODB_URI ?? 'mongodb://localhost:27017/octofit-tracker';
+const mongoUri = process.env.MONGODB_URI ?? 'mongodb://localhost:27017/octofit_db';
 
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
